@@ -7,20 +7,26 @@ $primary: rgb(47, 39, 206);
 $secondary: rgb(222, 220, 255);
 $accent: rgb(67, 59, 255);
 
-
 @import "bootstrap/scss//variables";
 @import "bootstrap/scss//variables-dark";
 @import "bootstrap/scss//maps";
 @import "bootstrap/scss//mixins";
 $theme-colors: (
-  "primary":    $primary,
-  "secondary":  $secondary,
-  "info":       $accent,
-    "pluto":    $indigo-600,
+  "primary": $primary,
+  "secondary": $secondary,
+  "info": $accent,
+  "pluto": $indigo-600,
 );
 
 @import "bootstrap/scss//utilities";
-$utilities: map-remove($utilities, "float", "opacity", "overflow", "shadow", "position");
+$utilities: map-remove(
+  $utilities,
+  "float",
+  "opacity",
+  "overflow",
+  "shadow",
+  "position"
+);
 
 // Layout & components
 @import "bootstrap/scss//root";
